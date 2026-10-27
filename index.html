@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prestige Motors | Pre-Owned Luxury & Exotic Automobiles</title>
+  <meta name="description" content="India's premier marketplace for certified pre-owned luxury cars. Explore curated vehicles from Mercedes-Benz, BMW, Porsche, Audi, Land Rover, and more." />
+  <!-- Google Fonts: Manrope & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Skip to Main Content for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Top Demo Banner -->
+  <div class="demo-banner" role="region" aria-label="Demo Notice">
+    <span><strong>Interactive Demo Environment:</strong> All listings, prices, and form submissions are illustrative and stored locally in your browser.</span>
+  </div>
+
+  <!-- Sticky Navigation Header -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand-logo" aria-label="Prestige Motors Home">
+        <svg class="logo-icon" width="38" height="38" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <circle cx="20" cy="20" r="18.5" stroke="#C6A15B" stroke-width="2"/>
+          <path d="M9 23.5L13.5 16H26.5L31 23.5H9Z" stroke="#C6A15B" stroke-width="2" stroke-linejoin="round"/>
+          <circle cx="14" cy="24.5" r="2.5" fill="#C6A15B"/>
+          <circle cx="26" cy="24.5" r="2.5" fill="#C6A15B"/>
+          <path d="M16 12L20 8L24 12" stroke="#C6A15B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-title">PRESTIGE</span>
+          <span class="logo-subtitle">MOTORS INDIA</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="main-nav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#inventory" class="nav-link">Buy Cars</a></li>
+          <li><a href="#sell-car" class="nav-link">Sell Your Car</a></li>
+          <li>
+            <a href="#compare-section" class="nav-link nav-badge-link">
+              Compare Cars
+              <span class="nav-pill" id="nav-compare-count" aria-label="Cars in comparison">0</span>
+            </a>
+          </li>
+          <li><a href="#why-us" class="nav-link">About Us</a></li>
+          <li><a href="#contact-section" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button type="button" class="icon-btn" id="open-wishlist-btn" aria-label="Open saved wishlist">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+          <span class="badge-count" id="wishlist-count" aria-live="polite">0</span>
+        </button>
+
+        <a href="#sell-car" class="btn btn-gold btn-sm header-cta">Sell Your Car</a>
+
+        <button type="button" class="hamburger-btn" id="hamburger-btn" aria-label="Toggle Menu" aria-expanded="false" aria-controls="main-nav">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Homepage Hero Section -->
+    <section class="hero-section" id="home">
+      <div class="hero-backdrop"></div>
+      <div class="container hero-content">
+        <div class="hero-badge">INDIA'S CURATED LUXURY AUTOMOTIVE EXCHANGE</div>
+        <h1 class="hero-title">Drive Luxury. <span class="gold-gradient-text">Discover Value.</span></h1>
+        <p class="hero-subtitle">Exceptional pre-owned luxury cars, carefully selected for your next journey.</p>
+
+        <!-- Hero Quick Search Panel -->
+        <form class="hero-search-bar" id="hero-search-form" aria-label="Quick vehicle search">
+          <div class="search-field">
+            <label for="hero-keyword">Keyword or Model</label>
+            <div class="input-with-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg>
+              <input type="text" id="hero-keyword" placeholder="e.g. Macan, E-Class, X5..." autocomplete="off" />
+            </div>
+          </div>
+
+          <div class="search-field">
+            <label for="hero-brand">Brand</label>
+            <select id="hero-brand">
+              <option value="">All Luxury Brands</option>
+              <option value="Mercedes-Benz">Mercedes-Benz</option>
+              <option value="BMW">BMW</option>
+              <option value="Audi">Audi</option>
+              <option value="Porsche">Porsche</option>
+              <option value="Land Rover">Land Rover</option>
+              <option value="Jaguar">Jaguar</option>
+              <option value="Volvo">Volvo</option>
+              <option value="Lexus">Lexus</option>
+              <option value="Mini">Mini</option>
+              <option value="Toyota">Toyota</option>
+            </select>
+          </div>
+
+          <div class="search-field">
+            <label for="hero-min-price">Min Price</label>
+            <select id="hero-min-price">
+              <option value="0">No Minimum</option>
+              <option value="3000000">₹30 Lakh</option>
+              <option value="5000000">₹50 Lakh</option>
+              <option value="7000000">₹70 Lakh</option>
+            </select>
+          </div>
+
+          <div class="search-field">
+            <label for="hero-max-price">Max Price</label>
+            <select id="hero-max-price">
+              <option value="999999999">No Maximum</option>
+              <option value="5000000">Up to ₹50 Lakh</option>
+              <option value="7000000">Up to ₹70 Lakh</option>
+              <option value="9000000">Up to ₹90 Lakh</option>
+              <option value="15000000">Up to ₹1.5 Crore</option>
+            </select>
+          </div>
+
+          <div class="search-actions">
+            <button type="submit" class="btn btn-gold btn-block">Explore Cars</button>
+          </div>
+        </form>
+
+        <div class="hero-cta-row">
+          <div class="trust-pills" aria-label="Marketplace Guarantees">
+            <div class="trust-pill">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C6A15B" stroke-width="2" aria-hidden="true">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              <span>100% Verified Listings</span>
+            </div>
+            <div class="trust-pill">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C6A15B" stroke-width="2" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+              <span>210-Point Inspected Vehicles</span>
+            </div>
+            <div class="trust-pill">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C6A15B" stroke-width="2" aria-hidden="true">
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+              <span>Transparent Zero-Haggle Pricing</span>
+            </div>
+          </div>
+
+          <a href="#sell-car" class="btn btn-outline-light">Sell Your Car &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Browse By Brand Section -->
+    <section class="section-padding bg-dark-elevated" id="brands-section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">MARQUE SELECTION</span>
+            <h2 class="section-title">Browse by Prestigious Brand</h2>
+          </div>
+          <button type="button" class="btn btn-link" id="clear-brand-selection">View All Marques &rarr;</button>
+        </div>
+
+        <div class="brand-grid" id="brand-grid" role="list">
+          <button type="button" class="brand-tile" data-brand="Mercedes-Benz" role="listitem">
+            <span class="brand-monogram">MB</span>
+            <span class="brand-name">Mercedes-Benz</span>
+          </button>
+          <button type="button" class="brand-tile" data-brand="BMW" role="listitem">
+            <span class="brand-monogram">BMW</span>
+            <span class="brand-name">BMW</span>
+          </button>
+          <button type="button" class="brand-tile" data-brand="Audi" role="listitem">
+            <span class="brand-monogram">AUDI</span>
+            <span class="brand-name">Audi</span>
+          </button>
+          <button type="button" class="brand-tile" data-brand="Porsche" role="listitem">
+            <span class="brand-monogram">POR</span>
+            <span class="brand-name">Porsche</span>
+          </button>
+          <button type="button" class="brand-tile" data-brand="Land Rover" role="listitem">
+            <span class="brand-monogram">LR</span>
+            <span class="brand-name">Land Rover</span>
+          </button>
+          <button type="button" class="brand-tile" data-brand="Jaguar" role="listitem">
+            <span class="brand-monogram">JAG</span>
+            <span class="brand-name">Jaguar</span>
+          </button>
+          <button type="button" class="brand-tile" data-brand="Volvo" role="listitem">
+            <span class="brand-monogram">VOL</span>
+            <span class="brand-name">Volvo</span>
+          </button>
+          <button type="button" class="brand-tile" data-brand="Lexus" role="listitem">
+            <span class="brand-monogram">LEX</span>
+            <span class="brand-name">Lexus</span>
+          </button>
+          <button type="button" class="brand-tile" data-brand="Mini" role="listitem">
+            <span class="brand-monogram">MINI</span>
+            <span class="brand-name">Mini</span>
+          </button>
+          <button type="button" class="brand-tile" data-brand="Toyota" role="listitem">
+            <span class="brand-monogram">TOY</span>
+            <span class="brand-name">Toyota</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Luxury Categories -->
+    <section class="section-padding" id="categories-section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">CURATED LIFESTYLES</span>
+            <h2 class="section-title">Featured Luxury Categories</h2>
+          </div>
+        </div>
+
+        <div class="categories-grid">
+          <article class="category-card" data-category-filter="Sedan" tabindex="0" role="button" aria-label="Filter by Luxury Sedans">
+            <img src="https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=900&q=80" alt="Executive Luxury Sedans" loading="lazy" />
+            <div class="category-overlay">
+              <span class="category-tag">Chauffeur &amp; Executive</span>
+              <h3>Luxury Sedans</h3>
+              <p>E-Class, 5 Series, A6 &amp; ES 300h</p>
+              <span class="category-cta">Explore Sedans &rarr;</span>
+            </div>
+          </article>
+
+          <article class="category-card" data-category-filter="SUV" tabindex="0" role="button" aria-label="Filter by Premium SUVs">
+            <img src="https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&w=900&q=80" alt="Commanding Premium SUVs" loading="lazy" />
+            <div class="category-overlay">
+              <span class="category-tag">All-Terrain Presence</span>
+              <h3>Premium SUVs</h3>
+              <p>Q7, X5, GLC, F-Pace &amp; Discovery</p>
+              <span class="category-cta">Explore SUVs &rarr;</span>
+            </div>
+          </article>
+
+          <article class="category-card" data-category-filter="Performance" tabindex="0" role="button" aria-label="Filter by Performance Cars">
+            <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80" alt="High-Octane Performance Cars" loading="lazy" />
+            <div class="category-overlay">
+              <span class="category-tag">Track-Bred Pedigree</span>
+              <h3>Performance Cars</h3>
+              <p>Porsche Macan, Mini Cooper S &amp; M-Sport</p>
+              <span class="category-cta">Explore Performance &rarr;</span>
+            </div>
+          </article>
+
+          <article class="category-card" data-category-filter="HybridElectric" tabindex="0" role="button" aria-label="Filter by Hybrid and Electric Cars">
+            <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&w=900&q=80" alt="Sustainable Hybrid and Electric Cars" loading="lazy" />
+            <div class="category-overlay">
+              <span class="category-tag">Sustainable Innovation</span>
+              <h3>Hybrid &amp; Electric</h3>
+              <p>Lexus Self-Charging Hybrids &amp; Mild-Hybrids</p>
+              <span class="category-cta">Explore Eco-Luxury &rarr;</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Inventory: Search, Filter & Featured Listings -->
+    <section class="section-padding bg-dark-elevated" id="inventory">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">THE COLLECTION</span>
+            <h2 class="section-title">Certified Pre-Owned Inventory</h2>
+          </div>
+          <div class="inventory-meta">
+            <span class="results-counter" id="results-counter" aria-live="polite">Showing 12 vehicles</span>
+            <div class="sort-wrapper">
+              <label for="sort-select">Sort By:</label>
+              <select id="sort-select" aria-label="Sort vehicles">
+                <option value="recent">Recently Added</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="year-desc">Newest Model Year</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Comprehensive Filter Panel -->
+        <form class="filter-panel" id="filter-form" aria-label="Filter luxury cars">
+          <div class="filter-grid">
+            <div class="filter-group">
+              <label for="filter-search">Search Keyword</label>
+              <input type="text" id="filter-search" placeholder="Brand, model, city, feature..." autocomplete="off" />
+            </div>
+
+            <div class="filter-group">
+              <label for="filter-brand">Brand</label>
+              <select id="filter-brand">
+                <option value="">All Brands</option>
+                <option value="Mercedes-Benz">Mercedes-Benz</option>
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+                <option value="Jaguar">Jaguar</option>
+                <option value="Land Rover">Land Rover</option>
+                <option value="Porsche">Porsche</option>
+                <option value="Volvo">Volvo</option>
+                <option value="Lexus">Lexus</option>
+                <option value="Mini">Mini</option>
+                <option value="Toyota">Toyota</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label for="filter-min-price">Min Price (₹)</label>
+              <select id="filter-min-price">
+                <option value="0">Any Min Price</option>
+                <option value="3000000">₹30,00,000</option>
+                <option value="4500000">₹45,00,000</option>
+                <option value="6000000">₹60,00,000</option>
+                <option value="7500000">₹75,00,000</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label for="filter-max-price">Max Price (₹)</label>
+              <select id="filter-max-price">
+                <option value="999999999">Any Max Price</option>
+                <option value="4500000">₹45,00,000</option>
+                <option value="6000000">₹60,00,000</option>
+                <option value="7500000">₹75,00,000</option>
+                <option value="9000000">₹90,00,000</option>
+                <option value="15000000">₹1,50,00,000</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label for="filter-year">Min Model Year</label>
+              <select id="filter-year">
+                <option value="0">All Years</option>
+                <option value="2023">2023 &amp; Newer</option>
+                <option value="2022">2022 &amp; Newer</option>
+                <option value="2021">2021 &amp; Newer</option>
+                <option value="2020">2020 &amp; Newer</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label for="filter-fuel">Fuel Type</label>
+              <select id="filter-fuel">
+                <option value="">All Fuel Types</option>
+                <option value="Petrol">Petrol</option>
+                <option value="Diesel">Diesel</option>
+                <option value="Hybrid">Hybrid</option>
+                <option value="Electric">Electric</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label for="filter-transmission">Transmission</label>
+              <select id="filter-transmission">
+                <option value="">All Transmissions</option>
+                <option value="Automatic">Automatic</option>
+                <option value="Manual">Manual</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label for="filter-body">Body Style</label>
+              <select id="filter-body">
+                <option value="">All Body Types</option>
+                <option value="Sedan">Sedan</option>
+                <option value="SUV">SUV</option>
+                <option value="Coupe">Coupe</option>
+                <option value="Hatchback">Hatchback</option>
+              </select>
+            </div>
+
+            <div class="filter-group">
+              <label for="filter-mileage">Max Kilometers</label>
+              <select id="filter-mileage">
+                <option value="999999">Any Mileage</option>
+                <option value="15000">Under 15,000 km</option>
+                <option value="25000">Under 25,000 km</option>
+                <option value="40000">Under 40,000 km</option>
+                <option value="60000">Under 60,000 km</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="filter-footer">
+            <div class="active-filter-hint" id="active-filter-hint">Showing all certified luxury vehicles.</div>
+            <div class="filter-buttons">
+              <button type="button" class="btn btn-outline-light btn-sm" id="reset-filters-btn">Reset Filters</button>
+              <button type="submit" class="btn btn-gold btn-sm" id="apply-filters-btn">Apply Filters</button>
+            </div>
+          </div>
+        </form>
+
+        <!-- Dynamic Car Grid -->
+        <div class="cars-grid" id="cars-grid" aria-live="polite"></div>
+
+        <!-- Empty State when no cars match -->
+        <div class="empty-state hidden" id="inventory-empty-state">
+          <div class="empty-icon" aria-hidden="true">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#C6A15B" stroke-width="1.5">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </div>
+          <h3>No Matching Vehicles Found</h3>
+          <p>We couldn't find any vehicles matching your exact filter criteria. Try expanding your price range or resetting the filters.</p>
+          <button type="button" class="btn btn-gold" id="empty-reset-btn">Reset All Filters</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Car Comparison Section -->
+    <section class="section-padding" id="compare-section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">SIDE-BY-SIDE EVALUATION</span>
+            <h2 class="section-title">Compare Selected Vehicles</h2>
+            <p class="section-desc">Select up to 3 vehicles from the inventory to compare specifications, pricing, and features side by side.</p>
+          </div>
+          <div class="compare-header-actions">
+            <button type="button" class="btn btn-outline-light btn-sm" id="clear-compare-btn">Clear Comparison</button>
+          </div>
+        </div>
+
+        <div id="compare-container">
+          <!-- Populated dynamically by renderComparison() -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Prestige Motors & How It Works -->
+    <section class="section-padding bg-dark-elevated" id="why-us">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="eyebrow">THE PRESTIGE STANDARD</span>
+          <h2 class="section-title">Why Discerning Collectors Choose Us</h2>
+          <p class="section-desc">Every automobile in our showroom passes a rigorous certification protocol before earning the Prestige seal.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-box">
+            <div class="feature-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C6A15B" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3>Verified Vehicle Listings</h3>
+            <p>Complete service history verification with OEM dealerships, clean title checks, and zero-accident structural guarantee.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C6A15B" stroke-width="2">
+                <polyline points="9 11 12 14 22 4"></polyline>
+                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
+              </svg>
+            </div>
+            <h3>210-Point Quality Inspection</h3>
+            <p>Master technicians evaluate engine telemetry, air suspension integrity, paint depth, and cabin electronics.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C6A15B" stroke-width="2">
+                <line x1="12" y1="1" x2="12" y2="23"></line>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+              </svg>
+            </div>
+            <h3>Transparent Pricing</h3>
+            <p>Upfront all-inclusive pricing in Indian Rupees with zero hidden brokerage charges and tailored luxury finance options.</p>
+          </div>
+
+          <div class="feature-box">
+            <div class="feature-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C6A15B" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3>Trusted Dealership Partners</h3>
+            <p>Curated network across Mumbai, Delhi NCR, Bengaluru, Hyderabad, Pune, and Chennai with concierge RTO transfer.</p>
+          </div>
+        </div>
+
+        <!-- How It Works Stepper -->
+        <div class="how-it-works">
+          <h3 class="subsection-title">How It Works — Seamless Acquisition</h3>
+          <div class="steps-grid">
+            <div class="step-card">
+              <span class="step-number">01</span>
+              <h4>Explore Vehicles</h4>
+              <p>Filter our curated portfolio by marque, body style, or investment bracket from the comfort of your home.</p>
+            </div>
+            <div class="step-card">
+              <span class="step-number">02</span>
+              <h4>Inspect Your Favorite</h4>
+              <p>Review transparent 210-point inspection reports, high-resolution galleries, and verified ownership records.</p>
+            </div>
+            <div class="step-card">
+              <span class="step-number">03</span>
+              <h4>Book a Test Drive</h4>
+              <p>Schedule a private showroom preview or request a white-glove doorstep test drive with our product specialist.</p>
+            </div>
+            <div class="step-card">
+              <span class="step-number">04</span>
+              <h4>Drive Home with Confidence</h4>
+              <p>Enjoy paperless documentation, bespoke financing, and complimentary 1-year comprehensive warranty coverage.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sell Your Car Section -->
+    <section class="section-padding" id="sell-car">
+      <div class="container">
+        <div class="sell-layout">
+          <div class="sell-info">
+            <span class="eyebrow">CONSIGN OR SELL DIRECTLY</span>
+            <h2 class="section-title">Sell Your Luxury Car at Peak Valuation</h2>
+            <p class="section-desc">Upgrade your garage effortlessly. Submit your vehicle details below for an instant valuation and publish your listing immediately to our live browser demo inventory.</p>
+
+            <ul class="sell-perks">
+              <li>
+                <strong>Same-Day Inspection &amp; Valuation</strong>
+                <span>Scientific pricing backed by pan-India luxury transaction data.</span>
+              </li>
+              <li>
+                <strong>Instant Outright Purchase or Consignment</strong>
+                <span>Choose immediate RTGS settlement or showroom display consignment.</span>
+              </li>
+              <li>
+                <strong>Confidential &amp; Hassle-Free RTO Transfer</strong>
+                <span>Dedicated relationship manager handles all documentation and hypothecation closure.</span>
+              </li>
+            </ul>
+
+            <div class="demo-notice-box">
+              <strong>Local Demo Notice:</strong> Submitting this form validates your inputs and immediately adds your car to the interactive listings above (persisted in your browser's <code>localStorage</code>). No data is transmitted to an external server.
+            </div>
+          </div>
+
+          <div class="sell-form-card">
+            <h3>Submit Vehicle Specification</h3>
+            <form id="sell-car-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="seller-name">Full Name <span class="req">*</span></label>
+                  <input type="text" id="seller-name" required placeholder="e.g. Vikramaditya Singhania" />
+                  <span class="error-msg" id="err-seller-name"></span>
+                </div>
+                <div class="form-group">
+                  <label for="seller-phone">Phone Number <span class="req">*</span></label>
+                  <input type="tel" id="seller-phone" required placeholder="e.g. 9820198201" />
+                  <span class="error-msg" id="err-seller-phone"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="seller-email">Email Address <span class="req">*</span></label>
+                  <input type="email" id="seller-email" required placeholder="vikram@domain.com" />
+                  <span class="error-msg" id="err-seller-email"></span>
+                </div>
+                <div class="form-group">
+                  <label for="seller-city">City <span class="req">*</span></label>
+                  <select id="seller-city" required>
+                    <option value="">Select City</option>
+                    <option value="Mumbai, MH">Mumbai, MH</option>
+                    <option value="New Delhi, DL">New Delhi, DL</option>
+                    <option value="Bengaluru, KA">Bengaluru, KA</option>
+                    <option value="Hyderabad, TS">Hyderabad, TS</option>
+                    <option value="Pune, MH">Pune, MH</option>
+                    <option value="Chennai, TN">Chennai, TN</option>
+                    <option value="Gurugram, HR">Gurugram, HR</option>
+                    <option value="Ahmedabad, GJ">Ahmedabad, GJ</option>
+                  </select>
+                  <span class="error-msg" id="err-seller-city"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="car-brand">Car Brand <span class="req">*</span></label>
+                  <select id="car-brand" required>
+                    <option value="">Select Brand</option>
+                    <option value="Mercedes-Benz">Mercedes-Benz</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Audi">Audi</option>
+                    <option value="Porsche">Porsche</option>
+                    <option value="Land Rover">Land Rover</option>
+                    <option value="Jaguar">Jaguar</option>
+                    <option value="Volvo">Volvo</option>
+                    <option value="Lexus">Lexus</option>
+                    <option value="Mini">Mini</option>
+                    <option value="Toyota">Toyota</option>
+                  </select>
+                  <span class="error-msg" id="err-car-brand"></span>
+                </div>
+                <div class="form-group">
+                  <label for="car-model">Model &amp; Variant <span class="req">*</span></label>
+                  <input type="text" id="car-model" required placeholder="e.g. S-Class S 350d AMG Line" />
+                  <span class="error-msg" id="err-car-model"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="car-year">Manufacturing Year <span class="req">*</span></label>
+                  <input type="number" id="car-year" min="2012" max="2026" required placeholder="e.g. 2023" />
+                  <span class="error-msg" id="err-car-year"></span>
+                </div>
+                <div class="form-group">
+                  <label for="car-kms">Kilometers Driven <span class="req">*</span></label>
+                  <input type="number" id="car-kms" min="100" max="250000" required placeholder="e.g. 14500" />
+                  <span class="error-msg" id="err-car-kms"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="car-fuel">Fuel Type <span class="req">*</span></label>
+                  <select id="car-fuel" required>
+                    <option value="">Select Fuel</option>
+                    <option value="Petrol">Petrol</option>
+                    <option value="Diesel">Diesel</option>
+                    <option value="Hybrid">Hybrid</option>
+                    <option value="Electric">Electric</option>
+                  </select>
+                  <span class="error-msg" id="err-car-fuel"></span>
+                </div>
+                <div class="form-group">
+                  <label for="car-transmission">Transmission <span class="req">*</span></label>
+                  <select id="car-transmission" required>
+                    <option value="">Select Transmission</option>
+                    <option value="Automatic">Automatic</option>
+                    <option value="Manual">Manual</option>
+                  </select>
+                  <span class="error-msg" id="err-car-transmission"></span>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="car-body">Body Type <span class="req">*</span></label>
+                  <select id="car-body" required>
+                    <option value="Sedan">Sedan</option>
+                    <option value="SUV">SUV</option>
+                    <option value="Coupe">Coupe</option>
+                    <option value="Hatchback">Hatchback</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="car-price">Expected Selling Price (₹) <span class="req">*</span></label>
+                  <input type="number" id="car-price" min="1500000" max="50000000" required placeholder="e.g. 6800000" />
+                  <span class="error-msg" id="err-car-price"></span>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="car-image">Vehicle Image URL (Optional — leave blank for default studio photo)</label>
+                <input type="url" id="car-image" placeholder="https://images.unsplash.com/..." />
+                <div id="sell-image-preview" class="sell-image-preview hidden">
+                  <img id="sell-preview-img" src="" alt="Submitted Vehicle Preview" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="car-description">Vehicle Condition &amp; Key Highlights <span class="req">*</span></label>
+                <textarea id="car-description" rows="3" required placeholder="Single owner, comprehensive zero-dep insurance, ceramic coated, Panoramic sunroof..."></textarea>
+                <span class="error-msg" id="err-car-description"></span>
+              </div>
+
+              <button type="submit" class="btn btn-gold btn-block">Submit &amp; List Vehicle in Demo</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Testimonials Section -->
+    <section class="section-padding bg-dark-elevated" id="testimonials-section">
+      <div class="container">
+        <div class="section-header centered">
+          <span class="eyebrow">CLIENT STORIES (ILLUSTRATIVE DEMO CONTENT)</span>
+          <h2 class="section-title">Endorsed by Automotive Connoisseurs</h2>
+          <p class="section-desc">Fictional testimonials illustrating the Prestige Motors client experience across India.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <blockquote class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="quote">"Acquiring my Porsche Macan through Prestige Motors in Mumbai felt indistinguishable from commissioning a brand-new vehicle in Stuttgart. The 210-point dossier was immaculate."</p>
+            <footer class="author">
+              <div class="author-avatar">AR</div>
+              <div>
+                <strong>Aarav Rathore</strong>
+                <span>Managing Partner, Worli, Mumbai &bull; Purchased 2021 Porsche Macan</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="quote">"Zero-haggle pricing and complete service history transparency made upgrading to our family's Audi Q7 effortless. Their doorstep test drive in Bengaluru was world-class."</p>
+            <footer class="author">
+              <div class="author-avatar">NM</div>
+              <div>
+                <strong>Dr. Niharika Menon</strong>
+                <span>Neurosurgeon, Indiranagar, Bengaluru &bull; Purchased 2022 Audi Q7</span>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial-card">
+            <div class="stars" aria-label="5 out of 5 stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="quote">"I consigned my BMW 530i M-Sport and received a fair valuation within 3 hours. The paperless transfer and escrow protection set a new benchmark for India's luxury market."</p>
+            <footer class="author">
+              <div class="author-avatar">KS</div>
+              <div>
+                <strong>Karanveer Sodhi</strong>
+                <span>Tech Founder, Vasant Vihar, New Delhi &bull; Sold BMW 5 Series</span>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Flagship Lounges Section -->
+    <section class="section-padding" id="contact-section">
+      <div class="container">
+        <div class="contact-cards-grid">
+          <div class="contact-info-panel">
+            <span class="eyebrow">PRIVATE CONCIERGE (DEMO INFO)</span>
+            <h2 class="section-title">Visit Our Flagship Showrooms</h2>
+            <p class="section-desc">Experience our collection over artisanal coffee with a certified product specialist, or schedule a private consultation.</p>
+
+            <div class="lounge-list">
+              <div class="lounge-item">
+                <h4>Mumbai Flagship Lounge</h4>
+                <p>Plot 42, Dr. Annie Besant Road, Worli, Mumbai, Maharashtra 400018</p>
+                <span>Demo Concierge: +91 22 6000 0000 (Illustrative)</span>
+              </div>
+              <div class="lounge-item">
+                <h4>Delhi NCR Experience Center</h4>
+                <p>Golf Course Road, Sector 54, Gurugram, Haryana 122002</p>
+                <span>Demo Concierge: +91 124 400 0000 (Illustrative)</span>
+              </div>
+              <div class="lounge-item">
+                <h4>Bengaluru Boutique</h4>
+                <p>UB City Enclave, Vittal Mallya Road, Bengaluru, Karnataka 560001</p>
+                <span>Demo Concierge: +91 80 4000 0000 (Illustrative)</span>
+              </div>
+            </div>
+
+            <div class="contact-quick-actions">
+              <button type="button" class="btn btn-gold" id="open-general-testdrive-btn">Book a Test Drive</button>
+              <button type="button" class="btn btn-outline-light" id="open-general-contact-btn">Contact Dealer Concierge</button>
+            </div>
+          </div>
+
+          <!-- Newsletter Card -->
+          <div class="newsletter-panel">
+            <span class="eyebrow">PRIVATE ALLOCATION ALERTS</span>
+            <h3>Join the Collector's Dispatch</h3>
+            <p>Receive priority notifications 48 hours before rare allocations, low-mileage Porsche and AMG models hit our public catalog.</p>
+            <form id="newsletter-form" class="newsletter-form" novalidate>
+              <label for="newsletter-email" class="sr-only">Email Address</label>
+              <input type="email" id="newsletter-email" required placeholder="Enter your executive email address..." />
+              <button type="submit" class="btn btn-gold">Subscribe</button>
+            </form>
+            <span class="error-msg" id="err-newsletter"></span>
+            <p class="newsletter-disclaimer">Simulated newsletter signup. Zero spam, unsubscribe anytime.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo">
+            <svg class="logo-icon" width="34" height="34" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+              <circle cx="20" cy="20" r="18.5" stroke="#C6A15B" stroke-width="2"/>
+              <path d="M9 23.5L13.5 16H26.5L31 23.5H9Z" stroke="#C6A15B" stroke-width="2" stroke-linejoin="round"/>
+              <circle cx="14" cy="24.5" r="2.5" fill="#C6A15B"/>
+              <circle cx="26" cy="24.5" r="2.5" fill="#C6A15B"/>
+            </svg>
+            <div class="logo-text">
+              <span class="logo-title">PRESTIGE</span>
+              <span class="logo-subtitle">MOTORS INDIA</span>
+            </div>
+          </a>
+          <p class="footer-about">India's most trusted destination for certified pre-owned luxury and exotic automobiles. Every vehicle is backed by our 210-point master inspection.</p>
+          <div class="social-links" aria-label="Social Media Links">
+            <a href="#home" aria-label="Instagram" class="social-icon">IG</a>
+            <a href="#home" aria-label="YouTube" class="social-icon">YT</a>
+            <a href="#home" aria-label="LinkedIn" class="social-icon">IN</a>
+            <a href="#home" aria-label="X Twitter" class="social-icon">X</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#inventory">Buy Luxury Cars</a></li>
+            <li><a href="#sell-car">Sell Your Car</a></li>
+            <li><a href="#compare-section">Compare Vehicles</a></li>
+            <li><a href="#why-us">The Prestige Standard</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Top Marques</h4>
+          <ul>
+            <li><a href="#inventory" data-footer-brand="Mercedes-Benz">Mercedes-Benz</a></li>
+            <li><a href="#inventory" data-footer-brand="BMW">BMW</a></li>
+            <li><a href="#inventory" data-footer-brand="Porsche">Porsche</a></li>
+            <li><a href="#inventory" data-footer-brand="Audi">Audi</a></li>
+            <li><a href="#inventory" data-footer-brand="Land Rover">Land Rover</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Client Support</h4>
+          <ul>
+            <li><a href="#contact-section">Showroom Locations</a></li>
+            <li><a href="#why-us">210-Point Inspection</a></li>
+            <li><a href="#sell-car">Consignment Guide</a></li>
+            <li><a href="#home" id="footer-privacy-link">Privacy Policy (Demo)</a></li>
+            <li><a href="#home" id="footer-terms-link">Terms of Service (Demo)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Prestige Motors India Pvt. Ltd. (Fictional Frontend Prototype). All prices displayed in INR (₹) are illustrative.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Car Details Modal -->
+  <div class="modal-backdrop hidden" id="car-details-modal" role="dialog" aria-modal="true" aria-labelledby="detail-modal-title">
+    <div class="modal-container modal-xl">
+      <button type="button" class="modal-close-btn" id="close-details-modal" aria-label="Close Vehicle Details">&times;</button>
+      <div id="car-details-content">
+        <!-- Populated dynamically by openCarDetails() -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Wishlist Drawer / Modal -->
+  <div class="modal-backdrop hidden" id="wishlist-modal" role="dialog" aria-modal="true" aria-labelledby="wishlist-modal-title">
+    <div class="modal-container modal-md">
+      <div class="modal-header">
+        <div>
+          <span class="eyebrow">YOUR SHORTLIST</span>
+          <h3 id="wishlist-modal-title">Saved Wishlist Vehicles</h3>
+        </div>
+        <button type="button" class="modal-close-btn" id="close-wishlist-modal" aria-label="Close Wishlist">&times;</button>
+      </div>
+      <div class="modal-body" id="wishlist-content">
+        <!-- Populated dynamically by renderWishlist() -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Book a Test Drive Modal -->
+  <div class="modal-backdrop hidden" id="test-drive-modal" role="dialog" aria-modal="true" aria-labelledby="test-drive-title">
+    <div class="modal-container modal-md">
+      <div class="modal-header">
+        <div>
+          <span class="eyebrow">CONCIERGE EXPERIENCE</span>
+          <h3 id="test-drive-title">Schedule a Private Test Drive</h3>
+        </div>
+        <button type="button" class="modal-close-btn" id="close-testdrive-modal" aria-label="Close Test Drive Form">&times;</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-note">Simulated local booking. No real appointment or message is dispatched.</p>
+        <form id="test-drive-form" novalidate>
+          <div class="form-group">
+            <label for="td-vehicle">Selected Vehicle <span class="req">*</span></label>
+            <select id="td-vehicle" required></select>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="td-name">Customer Name <span class="req">*</span></label>
+              <input type="text" id="td-name" required placeholder="Your Full Name" />
+              <span class="error-msg" id="err-td-name"></span>
+            </div>
+            <div class="form-group">
+              <label for="td-phone">Phone Number <span class="req">*</span></label>
+              <input type="tel" id="td-phone" required placeholder="10-digit mobile number" />
+              <span class="error-msg" id="err-td-phone"></span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="td-email">Email Address <span class="req">*</span></label>
+              <input type="email" id="td-email" required placeholder="you@example.com" />
+              <span class="error-msg" id="err-td-email"></span>
+            </div>
+            <div class="form-group">
+              <label for="td-city">Preferred Dealership / City <span class="req">*</span></label>
+              <select id="td-city" required>
+                <option value="Mumbai Flagship (Worli)">Mumbai Flagship (Worli)</option>
+                <option value="Delhi NCR Lounge (Gurugram)">Delhi NCR Lounge (Gurugram)</option>
+                <option value="Bengaluru Boutique (UB City)">Bengaluru Boutique (UB City)</option>
+                <option value="Hyderabad Jubilee Hills">Hyderabad Jubilee Hills</option>
+                <option value="Doorstep Concierge Delivery">Doorstep Concierge Test Drive</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="td-date">Preferred Date <span class="req">*</span></label>
+              <input type="date" id="td-date" required />
+              <span class="error-msg" id="err-td-date"></span>
+            </div>
+            <div class="form-group">
+              <label for="td-time">Preferred Time Slot <span class="req">*</span></label>
+              <select id="td-time" required>
+                <option value="11:00 AM - 01:00 PM">11:00 AM - 01:00 PM</option>
+                <option value="02:00 PM - 04:00 PM">02:00 PM - 04:00 PM</option>
+                <option value="04:30 PM - 06:30 PM">04:30 PM - 06:30 PM</option>
+                <option value="07:00 PM - 08:30 PM (Private Evening)">07:00 PM - 08:30 PM (Private Evening)</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-gold btn-block">Confirm Demo Test Drive Request</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Seller Modal -->
+  <div class="modal-backdrop hidden" id="contact-seller-modal" role="dialog" aria-modal="true" aria-labelledby="contact-seller-title">
+    <div class="modal-container modal-md">
+      <div class="modal-header">
+        <div>
+          <span class="eyebrow">DIRECT DEALERSHIP DESK</span>
+          <h3 id="contact-seller-title">Contact Seller Concierge</h3>
+        </div>
+        <button type="button" class="modal-close-btn" id="close-contact-modal" aria-label="Close Contact Seller Panel">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="demo-seller-box" id="contact-seller-summary">
+          <!-- Populated dynamically with vehicle & demo dealer details -->
+        </div>
+        <form id="contact-seller-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cs-name">Your Name <span class="req">*</span></label>
+              <input type="text" id="cs-name" required placeholder="Full Name" />
+              <span class="error-msg" id="err-cs-name"></span>
+            </div>
+            <div class="form-group">
+              <label for="cs-phone">Phone Number <span class="req">*</span></label>
+              <input type="tel" id="cs-phone" required placeholder="10-digit mobile" />
+              <span class="error-msg" id="err-cs-phone"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="cs-email">Email Address <span class="req">*</span></label>
+            <input type="email" id="cs-email" required placeholder="name@company.com" />
+            <span class="error-msg" id="err-cs-email"></span>
+          </div>
+          <div class="form-group">
+            <label for="cs-message">Message or Inquiry <span class="req">*</span></label>
+            <textarea id="cs-message" rows="3" required>I am interested in reviewing the complete 210-point inspection dossier and discussing finance/trade-in options for this vehicle.</textarea>
+            <span class="error-msg" id="err-cs-message"></span>
+          </div>
+          <button type="submit" class="btn btn-gold btn-block">Send Simulated Inquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
